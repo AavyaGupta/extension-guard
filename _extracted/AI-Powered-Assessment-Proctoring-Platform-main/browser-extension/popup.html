@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExtensionGuard</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">EXTENSIONGUARD</p>
+        <h1>Interview monitor</h1>
+        <p class="subhead">Monitoring is off until you review the disclosure and start it.</p>
+      </header>
+      <section id="disclosure" class="disclosure">
+        <h2>What is monitored</h2>
+        <p>During an active interview, this extension records tab changes, browser focus changes, visits to configured AI assistance domains, and local or private network addresses.</p>
+        <p>It does not read page contents, browsing history outside the session, passwords, or keystrokes.</p>
+      </section>
+      <form id="start-form">
+        <label for="interview-id">Interview session ID</label>
+        <input id="interview-id" name="interview-id" type="number" min="1" required>
+        <label for="token">Signed-in account token</label>
+        <input id="token" name="token" type="password" autocomplete="off" required>
+        <label class="consent"><input id="consent" type="checkbox" required> I understand and consent to monitoring for this interview.</label>
+        <button id="start" type="submit">Consent and start</button>
+      </form>
+      <section id="active-panel" hidden>
+        <p class="active-status"><span class="dot"></span> Monitoring active</p>
+        <p id="session-label"></p>
+        <button id="stop" class="stop" type="button">Stop monitoring and withdraw consent</button>
+      </section>
+      <p id="message" role="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { width: 360px; margin: 0; background: #f3f6f4; color: #17241d; font: 14px/1.5 "Segoe UI", sans-serif; }
+main { padding: 20px; }
+.eyebrow { margin: 0 0 6px; color: #18764a; font-size: 11px; font-weight: 700; letter-spacing: 1.4px; }
+h1 { margin: 0; font-size: 22px; }
+.subhead { margin: 6px 0 16px; color: #53665b; }
+.disclosure { padding: 12px; border-left: 3px solid #e29b38; background: #fff; }
+.disclosure h2 { margin: 0 0 6px; font-size: 14px; }
+.disclosure p { margin: 5px 0; font-size: 12px; color: #44554b; }
+form { display: grid; gap: 8px; margin-top: 16px; }
+label { font-size: 12px; font-weight: 650; }
+input[type="number"], input[type="password"] { width: 100%; padding: 9px 10px; border: 1px solid #b7c5bc; border-radius: 4px; background: #fff; color: #17241d; }
+.consent { display: flex; align-items: flex-start; gap: 8px; margin: 6px 0; font-weight: 400; }
+.consent input { margin-top: 3px; }
+button { width: 100%; padding: 10px 12px; border: 0; border-radius: 4px; background: #18764a; color: white; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+#active-panel { margin-top: 16px; }
+.active-status { display: flex; gap: 8px; align-items: center; color: #18764a; font-weight: 700; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #188452; }
+.stop { background: #a93c35; }
+#message { min-height: 20px; margin: 10px 0 0; color: #8d302b; font-size: 12px; }
+[hidden] { display: none !important; }

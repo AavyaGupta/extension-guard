@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ExtensionGuard Interview Monitor",
+  "version": "1.0.0",
+  "description": "Monitors browser activity during an active interview and reports events to the backend.",
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "windows",
+    "storage",
+    "alarms",
+    "runtime",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ExtensionGuard interview monitor",
+    "default_popup": "popup.html"
+  }
+}
